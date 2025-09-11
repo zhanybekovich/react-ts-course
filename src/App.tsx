@@ -6,7 +6,14 @@ function App() {
     <>
       <div>
         <h1>Hello React!</h1>
-        <Button />
+        <div className="card">
+          <Button
+            title="Hello"
+            onClick={() => alert("hello")}
+            disabled={true}
+          />
+          <Button disabled={false} title="Bye" onClick={() => alert("Bye!")} />
+        </div>
       </div>
     </>
   );
